@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+      
+body{
+    font-family: Arial, sans-serif;
+    padding: 1em;
+    
+}
+h1, h2, h3, h4, h5{
+    text-align: center;
+}
+/*body::before{
+        position:fixed;
+        background-image: url('img/RealState.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+        background-size: 100% 100%;
+        opacity: 1;
+        z-index: -1;
+       
+}*/
+body{
+    background-image: url('img/RealState.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+}
+main{
+    margin: 200px;
+}
+.main li{
+    margin: 1em;
+}
+/* Style the search box */
+.search input[type=text] {
+    float: center;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-left: 16px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+/* Styles for the results box */
+#results {
+    width: 100%;
+    max-width: 600px; /* limits width for large screens */
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* allows scrolling if content exceeds the box height */
+    max-height: 300px; /* limits the box height */
+}
+/* Individual result item styling */
+.result {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+/* Additional styles for better text formatting */
+.result strong {
+    color: #333;
+}
+
+.button {
+    background-color: #0a3670; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer; 
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #324b9f;
+    font-size: 18px;
+}
+.header ul, ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    /*max-width: 1200px;*/
+}
+.header li, li{
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+.header li a, li{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+.header li a:hover{
+    background-color: #d9d2e9;
+    transition: 0.3s;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #324b9f;
+    padding: 10px;
+    color: white;
+}
+.footer .column{
+    flex: 1;
+    margin: 10px;
+}
+.footer .column a{
+    text-decoration: none;
+    color: #bcbcbc;
+}
+.footer .column p{
+    color: #ffffff;
+}
