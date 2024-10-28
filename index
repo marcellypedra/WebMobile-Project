@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="shortcut icon" type="image/x-icon" href="img/houseicon.png">
+        <link rel="stylesheet" href="style.css">
+      </head>
+      <body>
+              
+    
+        <section id="header"></section>    
+        <main class="main">
+            <h1>BM Real State</h1>
+            <br>
+            <div class="search">
+                <input type="text" id="searchTerm" placeholder="Search..">
+                <button type="button"class="button" id="SearchRent" onclick="searchTerm()">Rent</button>
+                <button type="button"class="button" id="SearchBuy" onclick="searchTerm()">Buy</button>
+
+                <div id="results"></div>
+
+              </div>
+        </main>
+        <section id="footer"></section>
+    <script src="script.js"></script>
+    </body>
+</html>
