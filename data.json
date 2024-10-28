@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "title": "Cozy Family Home",
+        "address": "123 Maple Street, Springfield, IL",
+        "price": "$320,000"
+    },
+    {
+        "id": 2,
+        "title": "Modern Downtown Apartment",
+        "address": "456 Oak Avenue, Chicago, IL",
+        "price": "$525,000"
+    },
+    {
+        "id": 3,
+        "title": "Luxury Villa with Pool",
+        "address": "789 Palm Drive, Beverly Hills, CA",
+        "price": "$3,200,000"
+    },
+    {
+        "id": 4,
+        "title": "Beachfront Bungalow",
+        "address": "101 Ocean View Road, Miami, FL",
+        "price": "$1,100,000"
+    },
+    {
+        "id": 5,
+        "title": "Suburban Split-Level",
+        "address": "202 Elm Street, Columbus, OH",
+        "price": "$275,000"
+    },
+    {
+        "id": 6,
+        "title": "Mountain Cabin Retreat",
+        "address": "303 Pine Hill Road, Aspen, CO",
+        "price": "$890,000"
+    },
+    {
+        "id": 7,
+        "title": "Historic Victorian Home",
+        "address": "404 Rosewood Lane, Charleston, SC",
+        "price": "$750,000"
+    },
+    {
+        "id": 8,
+        "title": "Contemporary Loft",
+        "address": "505 Pearl Street, New York, NY",
+        "price": "$1,450,000"
+    },
+    {
+        "id": 9,
+        "title": "Ranch-Style Family Home",
+        "address": "606 Greenway Drive, Austin, TX",
+        "price": "$395,000"
+    },
+    {
+        "id": 10,
+        "title": "Eco-Friendly Townhouse",
+        "address": "707 Willow Bend Lane, Portland, OR",
+        "price": "$650,000"
+    }
+]
