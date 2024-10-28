@@ -38,10 +38,16 @@ async function searchTerm() {
             item.address.toLowerCase().includes(searchTerm)
         );
 
+        const newWindow = window.open('results.html', '_blank');
+
+        // Wait for the new window to load before accessing its DOM
+        newWindow.onload = () => {
+            const resultsContainer = newWindow.document.getElementById("results");
+
         // Display results
         if (filteredResults.length > 0) {
             filteredResults.forEach(item => {
-                const resultDiv = document.createElement("div");
+                const resultDiv = newWindow.document.createElement("div");
                 resultDiv.classList.add("result");
                 resultDiv.innerHTML = `<strong>ID:</strong> ${item.id}<br>
                                        <strong>Title:</strong> ${item.title}<br>

@@ -12,16 +12,7 @@ body{
 h1, h2, h3, h4, h5{
     text-align: center;
 }
-/*body::before{
-        position:fixed;
-        background-image: url('img/RealState.png');
-        background-repeat: no-repeat;
-        background-attachment: fixed; 
-        background-size: 100% 100%;
-        opacity: 1;
-        z-index: -1;
        
-}*/
 body{
     background-image: url('img/RealState.png');
     background-repeat: no-repeat;
@@ -46,7 +37,7 @@ main{
 }
 
 /* Styles for the results box */
-#results {
+/*#results {
     width: 100%;
     max-width: 600px; /* limits width for large screens */
     margin-top: 20px;
@@ -57,7 +48,7 @@ main{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow-y: auto; /* allows scrolling if content exceeds the box height */
     max-height: 300px; /* limits the box height */
-}
+}*/
 /* Individual result item styling */
 .result {
     margin-bottom: 10px;
