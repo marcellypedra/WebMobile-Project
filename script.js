@@ -76,8 +76,9 @@ function validateForm() {
     let x = document.forms["myForm"]["fname"].value;
     let y = document.forms["myForm"]["femail"].value;
     let z = document.forms["myForm"]["fphone"].value;
-    if (x , y ,z == "") {
+    if (x == "" || y == ""|| z == "") {
       alert("Name must be filled out");
-    } else {alert ("Thank you for your interest in one of our properties. One of our agents will contact you soon!");
+    } else {
+      alert ("Thank you for your interest in one of our properties. One of our agents will contact you soon!");
     }
   }
