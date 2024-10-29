@@ -74,8 +74,10 @@ async function searchTerm() {
 
 function validateForm() {
     let x = document.forms["myForm"]["fname"].value;
-    if (x == "") {
+    let y = document.forms["myForm"]["femail"].value;
+    let z = document.forms["myForm"]["fphone"].value;
+    if (x , y ,z == "") {
       alert("Name must be filled out");
-      return false;
+    } else {alert ("Thank you for your interest in one of our properties. One of our agents will contact you soon!");
     }
   }
