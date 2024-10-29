@@ -10,9 +10,11 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById("footer").innerHTML = data;
         });
 });
+
 function openPage(pageName) {
     window.location = `${pageName}.html`;
 }
+
 async function searchTerm() {
     // Clear previous results
     const resultsContainer = document.getElementById("results");
@@ -44,23 +46,28 @@ async function searchTerm() {
         newWindow.onload = () => {
             const resultsContainer = newWindow.document.getElementById("results");
 
-        // Display results
-        if (filteredResults.length > 0) {
-            filteredResults.forEach(item => {
-                const resultDiv = newWindow.document.createElement("div");
-                resultDiv.classList.add("result");
-                resultDiv.innerHTML = `<strong>ID:</strong> ${item.id}<br>
-                                       <strong>Title:</strong> ${item.title}<br>
-                                       <strong>Address:</strong> ${item.address}<br>
-                                       <strong>Price:</strong> ${item.price}`;
-                resultsContainer.appendChild(resultDiv);
-            });
-        } else {
-            resultsContainer.innerHTML = "<p>No results found.</p>";
-        }
+            // Display results
+            if (filteredResults.length > 0) {
+                filteredResults.forEach(item => {
+                    const resultDiv = newWindow.document.createElement("div");
+                    resultDiv.classList.add("result");
+                    resultDiv.innerHTML = `<strong>ID:</strong> ${item.id}<br>
+                                           <strong>Title:</strong> ${item.title}<br>
+                                           <strong>Address:</strong> ${item.address}<br>
+                                           <strong>Price:</strong> ${item.price}`;
+                    resultsContainer.appendChild(resultDiv);
+                });
+            } else {
+                resultsContainer.innerHTML = "<p>No results found.</p>";
+            }
+        };
 
     } catch (error) {
         console.error("Error fetching the JSON file:", error);
-        resultsContainer.innerHTML = "<p>Error loading data.</p>";
+
+        // Display an error message in the original results container, if necessary
+        if (resultsContainer) {
+            resultsContainer.innerHTML = "<p>Error loading data.</p>";
+        }
     }
-}
+}  
